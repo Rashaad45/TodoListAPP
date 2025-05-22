@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="app_title">My Todo List</string>
+    <string name="empty_list_image">Empty list image</string>
+    <string name="no_todos_yet">No tasks yet</string>
+    <string name="add_todo_hint">Add your first task below to get started</string>
+    <string name="enter_todo">Enter a new task</string>
+    <string name="add">Add</string>
+    <string name="mark_as_done">Mark as done</string>
+    <string name="delete_done">Clear Done</string>
+</resources>
