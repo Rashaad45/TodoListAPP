@@ -1,11 +1,52 @@
 <resources>
     <string name="app_name">ToDo</string>
-    <string name="app_title">My Todo List</string>
-    <string name="empty_list_image">Empty list image</string>
-    <string name="no_todos_yet">No tasks yet</string>
-    <string name="add_todo_hint">Add your first task below to get started</string>
-    <string name="enter_todo">Enter a new task</string>
-    <string name="add">Add</string>
+    <string name="app_title">My Tasks</string>
+
+    <!-- Progress header -->
+    <string name="progress_empty">Nothing planned yet</string>
+    <string name="progress_format">%1$d of %2$d tasks done</string>
+    <string name="progress_all_done">All %1$d tasks done 🎉</string>
+
+    <!-- Filters -->
+    <string name="filter_all">All · %1$d</string>
+    <string name="filter_active">To do · %1$d</string>
+    <string name="filter_done">Done · %1$d</string>
+
+    <!-- Empty states -->
+    <string name="empty_title_none">No tasks yet</string>
+    <string name="empty_subtitle_none">Tap “New task” to add your first one.</string>
+    <string name="empty_title_active">You’re all caught up</string>
+    <string name="empty_subtitle_active">Every task is done. Nice work.</string>
+    <string name="empty_title_done">Nothing finished yet</string>
+    <string name="empty_subtitle_done">Tick a task off and it will show up here.</string>
+
+    <!-- Task item -->
     <string name="mark_as_done">Mark as done</string>
-    <string name="delete_done">Clear Done</string>
+    <string name="added_on">Added %1$s</string>
+    <string name="completed_on">Done %1$s</string>
+
+    <!-- Add / edit dialog -->
+    <string name="new_task">New task</string>
+    <string name="edit_task">Edit task</string>
+    <string name="task_hint">What needs doing?</string>
+    <string name="error_empty_task">Please enter a task</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <!-- Delete / clear -->
+    <string name="task_deleted">Task deleted</string>
+    <string name="undo">Undo</string>
+    <string name="clear">Clear</string>
+    <string name="clear_completed">Clear completed</string>
+    <string name="clear_completed_title">Clear completed tasks?</string>
+    <plurals name="clear_completed_message">
+        <item quantity="one">%1$d completed task will be removed.</item>
+        <item quantity="other">%1$d completed tasks will be removed.</item>
+    </plurals>
+    <plurals name="tasks_cleared">
+        <item quantity="one">%1$d task cleared</item>
+        <item quantity="other">%1$d tasks cleared</item>
+    </plurals>
 </resources>

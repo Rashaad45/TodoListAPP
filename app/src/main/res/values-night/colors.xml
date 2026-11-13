@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#A5B4FC</color>
+    <color name="brand_on_primary">#1E1B4B</color>
+    <color name="brand_primary_container">#3730A3</color>
+    <color name="brand_on_primary_container">#E0E7FF</color>
+    <color name="brand_secondary_container">#312E81</color>
+    <color name="brand_on_secondary_container">#E0E7FF</color>
+
+    <color name="swipe_delete_background">#93000A</color>
+    <color name="swipe_delete_foreground">#FFDAD6</color>
+</resources>

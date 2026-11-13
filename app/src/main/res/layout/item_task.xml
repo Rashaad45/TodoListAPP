@@ -2,19 +2,25 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Material3.CardView.Filled"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="4dp"
-    android:layout_marginHorizontal="8dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="2dp">
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp">
+        android:minHeight="64dp"
+        android:paddingStart="4dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="10dp">
 
-        <CheckBox
+        <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/cbDone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,34 +30,34 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvTodoTitle"
+            android:id="@+id/tvTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             android:ellipsize="end"
-            android:maxLines="2"
-            android:textColor="@color/primary_text_color"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/tvDateAdded"
+            android:maxLines="3"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintBottom_toTopOf="@+id/tvMeta"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cbDone"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Buy groceries from the store: milk, eggs, bread" />
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Buy groceries: milk, eggs, bread" />
 
         <TextView
-            android:id="@+id/tvDateAdded"
+            android:id="@+id/tvMeta"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:textColor="@color/secondary_text_color"
-            android:textSize="12sp"
-            android:visibility="visible"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cbDone"
-            app:layout_constraintTop_toBottomOf="@+id/tvTodoTitle"
-            tools:text="Added: May 19, 2025" />
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            tools:text="Added 13 Nov, 5:42 PM" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
